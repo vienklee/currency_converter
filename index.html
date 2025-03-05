@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="converter">
+      <h1 class="converter_title">Конвертер валют</h1>
+      <div class="input">
+        <select id="choice_currency">
+          <option value="BYN">BYN</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="CNY">CNY</option>
+          <option value="RUB">RUB</option>
+        </select>
+        <input type="number" id="amount" placeholder="Введите сумму" min="0" value="1"/>
+      </div>
+      <div class="results">
+        <div class="result_item" data-currency="BYN">
+          <label>BYN</label>
+          <span class="result_value">0.00</span>
+        </div>
+        <div class="result_item" data-currency="USD">
+          <label>USD</label>
+          <span class="result_value">0.00</span>
+        </div>
+        <div class="result_item" data-currency="EUR">
+          <label>EUR</label>
+          <span class="result_value">0.00</span>
+        </div>
+        <div class="result_item" data-currency="CNY">
+          <label>CNY</label>
+          <span class="result_value">0.00</span>
+        </div>
+        <div class="result_item" data-currency="RUB">
+          <label>RUB</label>
+          <span class="result_value">0.00</span>
+        </div>
+      </div>
+      <input type="date" id="datepicker" value="2025-03-05" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
